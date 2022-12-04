@@ -1,0 +1,5 @@
+# folder for debugging and development
+!/__test__
+
+# file module from npm
+/node_modules

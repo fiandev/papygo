@@ -1,0 +1,35 @@
+{
+  "name": "PaPyGo",
+  "version": "0.0.1",
+  "description": "A new interpreter language insipired by pascal, python and go language!",
+  "main": "index.js",
+  "bin": {
+    "ppg": "./bin/execute",
+    "papygo": "./bin/execute"
+  },
+  "scripts": {
+    "test": "echo 'no test!'"
+  },
+  "keywords": [
+    "interpreter",
+    "papygo",
+    "ppg",
+    "nodejs",
+    "js"
+  ],
+  "author": "fiandev",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7",
+    "vm": "^0.1.0"
+  },
+  "imports": {
+    "#interpreter": "./lib/Interpreter/index.js",
+    "#utils/*": "./lib/utils/*.js",
+    "#syntax/*": "./lib/Logic/parser/syntax/*.js",
+    "#transform/*": "./lib/Logic/parser/transform/*.js",
+    "#test/*": "./__test__/*.js"
+  }
+}
